@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAROG Wellness - Rituals for Hair & Skin</title>
+    <!-- Fonts: Dancing Script for headings, Playfair Display for body, Poppins as fallback -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hair_skin.css">
+</head>
+<body>
+
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="assets/images/logo.webp" alt="Aarog Logo" />
+        </div>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger" id="hamburger">&#9776;</div>
+
+        <ul class="nav-links" id="navLinks">
+            <li>Home</li>
+
+            <li class="dropdown" id="servicesDropdown">
+                Services <span class="arrow">&#9662;</span>
+                <ul class="dropdown-menu">
+                    <li><a href="hair_skin.html">Hair & Skin</a></li>
+                    <!-- Added hyperlink to a placeholder page 'body.html' -->
+                    <li><a href="index.html">Body</a></li>
+                </ul>
+            </li>
+
+            <li>Our Gallery</li>
+            <li>Products</li>
+            <li class="active">Reach Us</li>
+        </ul>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-image-wrapper">
+                    <div class="hero-arch-bg"></div>
+                    <div class="image-frame hero-arch-image-frame">
+                        <img src="assets/images/hair_spa.png" alt="Head Massage" class="hero-img hero-arch-img">
+                    </div>
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">Rituals for Hair & Skin</h1>
+                    <p class="hero-description">
+                        Reveal your natural radiance with skin and hair therapies designed to renew, refresh, and restore.
+                    </p>
+                    <div class="hero-illustrations">
+                        <div class="illustration">
+                            <img src="assets/images/download.png" alt="Illustration" width="250" height="250" style="margin-left: 10px;">
+                        </div>
+                        <div class="illustration">
+                            <img src="assets/images/download (1).png" alt="Illustration" width="280" height="280" style="margin-left: 10px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature Wellness Journeys Section -->
+    <section id="services" class="signature-rituals">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Explore Our Signature Wellness Journeys</h2>
+                <h3 class="section-subtitle">body</h3>
+            </div>
+            <div class="rituals-grid">
+                <div class="ritual-card" data-ritual="massage">
+                    <div class="arch-image">
+                        <img src="assets/images/A1.jpg" alt="Massage" class="ritual-img">
+                    </div>
+                    <div class="ritual-caption">Hair Spa &  Hair Cut</div>
+                    <svg width="200" height="30">
+                        <rect x="30" y="10" width="140" height="1" rx="8" ry="8" style="stroke:#0c1d17;stroke-width:4;fill:none;" />
+                    </svg>
+                </div>
+                <div class="ritual-card" data-ritual="spa">
+                    <div class="arch-image">
+                        <img src="assets/images/A2.jpg" alt="Spa Therapies & Rituals" class="ritual-img">
+                    </div>
+                    <div class="ritual-caption">Facials</div>
+                    <svg width="200" height="30">
+                        <rect x="30" y="10" width="140" height="1" rx="8" ry="8" style="stroke:#0c1d17;stroke-width:4;fill:none;" />
+                    </svg>
+                </div>
+                <div class="ritual-card" data-ritual="love">
+                    <div class="arch-image">
+                        <img src="assets/images/A3.jpg" alt="Love theory" class="ritual-img">
+                    </div>
+                    <div class="ritual-caption">Threading & Waxing</div>
+                    <svg width="200" height="30">
+                        <rect x="30" y="10" width="140" height="1" rx="8" ry="8" style="stroke:#0c1d17;stroke-width:4;fill:none;" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Balinese Massage Rows Container Start -->
+    <div class="balinese-rows-container" id="balinese-rows-container">
+        <!-- Cards will be dynamically generated here -->
+    </div>
+    <!-- Balinese Massage Rows Container End -->
+
+
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-overlay">
+            <h2>Stay Connected</h2>
+            <div class="footer-content">
+
+                <div class="footer-left">
+                    <div class="footer-item">
+                        <h4>ADDRESS</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, impedit, eos eum veritatis,
+                            aspernatur<br />
+                            Nungaredbh - 60xxx</p>
+                    </div>
+                    <div class="footer-item">
+                        <h4>EMAIL</h4>
+                        <p>info@aarogwellness.com</p>
+                    </div>
+                    <div class="footer-item">
+                        <h4>FOR ENQUIRY</h4>
+                        <p>+91-XXXXXXXX</p>
+                    </div>
+                    <div class="footer-item">
+                        <h4>CONTACT NO</h4>
+                        <p>+91-XXXXXXXXXX</p>
+                    </div>
+                </div>
+
+
+                <div class="footer-right">
+                    <p><strong>QUICK LINKS</strong></p>
+                    <ul>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#services">SERVICES</a></li>
+                        <li><a href="#our-space">OUR Gallery</a></li>
+                        <li><a href="#products">PRODUCTS</a></li>
+                        <!-- <li><a href="#clients">CLIENTS</a></li> -->
+                        <li><a href="#reach-us">REACH US</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <img src="assets/images/logo.webp" alt="Footer Logo" class="main-footer-logo" />
+
+                <p>
+                    <a href="https://www.xlmanagementservices.in" target="_blank">
+                        <img src="assets/images/xl.webp" alt="XL Logo" class="xl-footer-logo" />
+                    </a>
+                    © 2025 Aarog Wellness. All rights reserved.<br />
+                    Designed & Developed by
+                    <a href="https://www.xlmanagementservices.in" target="_blank"
+                        style="color: inherit; text-decoration: none;">
+                        XL Management Services
+                    </a>
+                </p>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script>
+        // Ritual data for each card
+        const ritualData = {
+            massage: [
+                {
+                    image: 'assets/images/c1.jfif',
+                    title: 'FOOT REFLEXOLOGYA',
+                    desc: 'A soothing foot massage that activates key pressure points to rebalance the body and relieve tension. It enhances blood circulation and promotes natural healing, particularly for digestive concerns and stress-related conditions. Perfect for those who spend long hours on their feet. Let your body relax through the healing touch of your soles. deeply relaxing massage to soothe your body and mind. Experience the healing power of touch.'
+                },
+                {
+                    image: 'assets/images/c2.jfif',
+                    title: 'BALINESE MASSAGE',
+                    desc: 'A timeless massage therapy that blends firm pressure, gentle stretching, acupressure, aromatherapy, and reflexology. It boosts circulation, eases joint and muscle discomfort, and fosters deep relaxation. Ideal for those seeking physical relief along with emotional tranquility. A calming touch that nurtures your overall well-being. deeply relaxing massage to soothe your body and mind. Experience the healing power of touch.'
+                },
+                {
+                    image: 'assets/images/c3.jfif',
+                    title: 'DEEP TISSUE MASSAGE',
+                    desc: 'A deeplyRooted in Hawaiian healing traditions, this massage features flowing, rhythmic movements that release tension and restore energy flow. It helps relieve physical stress while enhancing blood and lymphatic circulation. Scented oils or creams add a layer of sensory comfort. A holistic experience designed for deep relaxation and emotional harmony. relaxing massage to soothe your body and mind. Experience the healing power of touch.'
+                },
+                {
+                    image: 'assets/images/c4.jfif',
+                    title: 'HAWAIIAN LOMI LOMI MASSAGE',
+                    desc: 'A deeply rInspired by Hawaiian healing traditions, this massage uses rhythmic movements to release tension and restore energy flow. It eases physical stress while supporting lymphatic and blood circulation. Aroma oils or creams are used for added sensory comfort. A holistic ritual for deep relaxation and emotional balance.elaxing massage to soothe your body and mind. Experience the healing power of touch.'
+                },
+                {
+                    image: 'assets/images/c6.jfif',
+                    title: 'TRADITIONAL THAI FUSION MASSAGED',
+                    desc: 'AThis massage fuses traditional Thai methods with deep tissue therapy to improve flexibility and ease chronic tension. Through compression,  it enhances joint mobility and supports muscle recovery. Perfect for addressing sports injuries and improving posture. A dynamic blend of relief and revitalizing movement. deeply relaxing massage to soothe your body and mind. Experience the healing power of touch.'
+                },
+                {
+                    image: 'assets/images/card3.jpg',
+                    title: 'BACK, SHOULDER & HEAD MASSAGE',
+                    desc: 'A deeply relTargeted to relieve tension in the neck, shoulders, and upper back, this massage melts away daily stress and stiffness. It ends with a calming head massage for total relaxation. Perfect for office fatigue and posture-related tension. A quick yet deeply therapeutic session.axing massage to soothe your body and mind. Experience the healing power of touch.'
+                },
+            ],
+            spa: [
+                {
+                    image: 'assets/images/c29.jfif',
+                    title: 'SIGNATURE MASSAGE',
+                    desc: 'A luxurious therapy that harnesses the power of a warm herbal compress to soothe deep muscle tension and joint discomfort. Blending firm pressure with gentle stretching, acupressure, and aromatherapy, it offers complete mind-body relaxation. Ideal for those seeking deep relief and a serene experience. Leaves you feeling fully restored and rejuvenated. in luxurious spa therapies and rituals designed to rejuvenate and refresh.'
+                },
+                {
+                    image: 'assets/images/c22.jfif',
+                    title: 'JET LAG RECOVERY ',
+                    desc: 'Revive your body and mind after travel with this energizing therapy. The experience includes a full-body scrub, a Balinese back massage, a calming head and shoulder massage, and a soothing foot ritual. Designed to boost circulation and reset your natural rhythm.'
+                },
+                {
+                    image: 'assets/images/c23.jfif',
+                    title: 'AROG’S EXPERIENCE ',
+                    desc: 'Indulge in the ultimate spa ritual with a body scrub, full-body massage, and a deeply hydrating facial. This all-in-one wellness journey blends detoxification, relaxation, and radiance-boosting care. Ideal for special occasions or when you need complete rejuvenation. A head-to-toe spa escape crafted from luxurious therapies and rituals designed to refresh and renew.'
+                },
+                {
+                    image: 'assets/images/c24.jfif',
+                    title: 'BODY SCRUB ',
+                    desc: 'Rejuvenate your skin with our energizing full-body scrub. This treatment gently exfoliates dead skin cells, stimulates circulation, and improves the absorption of skincare products. Suitable for all skin types, it leaves your skin soft, glowing, and visibly refreshed. A perfect way to prepare for any spa ritual..'
+                },
+                {
+                    image: 'assets/images/c26.jfif',
+                    title: 'BODY MASK ',
+                    desc: 'Purify and firm your skin with this revitalizing marine clay body wrap. Designed to draw out toxins, reduce cellulite, and exfoliate dead skin cells, it leaves your skin noticeably smoother, tighter, and more toned. A refreshing ritual that enhances your body’s natural glow'
+                },
+                {
+                    image: 'assets/images/c27.jfif',
+                    title: 'AROMASOUL RITUAL ',
+                    desc: 'Indulge in This indulgent body scrub, infused with your choice of essential oil blends, is crafted to nourish and restore the skin. Drawing inspiration from global massage traditions, it offers a complete sensorial journey. Perfect for enhancing skin smoothness, radiance, and vitality. A deeply revitalizing escape for body and soul. spa therapies and rituals designed to rejuvenate and refresh.'
+                },
+                {
+                    image: 'assets/images/card2.avif',
+                    title: 'AYURVEDIC DETOXIFICATION',
+                    desc: 'Indulge A detoxifying massage inspired by Panchakarma traditions, featuring Abhyanga techniques to ready the body for deep cleansing. Warm herbal oils penetrate the tissues, stimulate circulation, and aid in flushing out toxins. This therapy promotes internal balance, revitalization, and energy renewal. Perfect for restoring vitality and supporting full-body detox luxurious spa therapies and rituals designed to rejuvenate and refresh.'
+                },
+            ],
+            love: [
+                {
+                    image: 'assets/images/c31.jfif',
+                    title: 'Aroma Infusion 1',
+                    desc: 'Awaken your senses with this signature aromatic elixir, crafted from botanical oils like rosehip, hibiscus, lavender, rosemary, and ginger to deeply elevate wellness. These soothing essential oils boost circulation, ease tension, and bring harmony to both scalp and skin. Perfect for those seeking holistic rejuvenation, it leaves your complexion radiant and your mood balanced. A tranquil blend of nature’s finest for full-body revitalization.A unique treatment focused on self-love, balance, and holistic well-being.'
+                },
+                {
+                    image: 'assets/images/c32.jfif',
+                    title: 'CLASSICAL SWEDISH MASSAGE',
+                    desc: 'A Unwind and restore with this revitalizing massage, featuring firming and toning oils to enhance skin texture and reduce fluid retention. Detoxifying techniques stimulate circulation, release muscle tension, and support toxin elimination. Perfect for relieving stress and promoting overall wellness. Customize your experience with your choice of nourishing cream or aromatic oils treatment focused on self-love, balance, and holistic well-being.'
+                },
+                {
+                    image: 'assets/images/c34.jfif',
+                    title: 'LOMI LOMI MASSAGE 3',
+                    desc: 'A unique treatment Inspired by ancient Hawaiian healing, this massage features rhythmic, flowing movements that dissolve tension and restore natural energy flow. It relieves physical stress while enhancing lymphatic and blood circulation. Scented oils or creams add a comforting sensory touch. A holistic ritual that promotes deep relaxation and emotional harmony on self-love, balance, and holistic well-being.'
+                },
+                
+            ]
+        };
+
+        function renderBalineseCards(cards) {
+            const container = document.getElementById('balinese-rows-container');
+            container.innerHTML = '';
+
+            cards.forEach((card, idx) => {
+                // Create wrapper
+                const cardSection = document.createElement('section');
+                cardSection.className = 'custom-card-section';
+
+                // Create the card itself
+                const cardDiv = document.createElement('div');
+                cardDiv.className = [
+                    'custom-card',
+                    idx % 2 === 0 ? 'custom-card-green1' : 'custom-card-green2'
+                ].join(' ');
+
+                // Fill the content
+                cardDiv.innerHTML = `
+                    <div class="custom-card-img">
+                    <img src="${card.image}" alt="${card.title}" />
+                    </div>
+                    <div class="custom-card-text">
+                    <h2 class="custom-card-title ${idx % 2 === 0 ? 'gold-text' : 'dark-text'}">${card.title}</h2>
+                    <p class="custom-card-desc ${idx % 2 === 0 ? 'gold-text' : 'dark-text'}">${card.desc}</p>
+                    </div>
+                `;
+
+                // **Trigger the animation** after insertion**
+                //   1) Append it (still invisible)
+                cardSection.appendChild(cardDiv);
+                container.appendChild(cardSection);
+                //   2) On the next frame, add the class
+                requestAnimationFrame(() => {
+                    cardDiv.classList.add('animate');
+                });
+            });
+        }
+
+        // Initial render (optional: show one set by default)
+        renderBalineseCards(ritualData.massage);
+
+        // Get all ritual cards
+        document.querySelectorAll('.ritual-card').forEach(card => {
+            card.addEventListener('click', function () {
+                const ritual = this.getAttribute('data-ritual');
+                const data = ritualData[ritual];
+                if (!data) return;
+                renderBalineseCards(data);
+            });
+        });
+    </script>
+
+    
+<script>
+    document.querySelectorAll('.faq-question').forEach(item => {
+        item.addEventListener('click', () => {
+            const parent = item.parentElement;
+            parent.classList.toggle('active');
+        });
+    });
+
+    function toggleMenu() {
+        const nav = document.getElementById("navLinks");
+        nav.classList.toggle("show");
+    }
+
+
+    const servicesDropdown = document.getElementById('servicesDropdown');
+    const arrow = servicesDropdown.querySelector('.arrow');
+
+    arrow.addEventListener('click', (e) => {
+        e.stopPropagation(); // prevent bubbling
+        servicesDropdown.classList.toggle('active');
+    });
+
+    // Optional: Click outside to close
+    document.addEventListener('click', function (event) {
+        if (!servicesDropdown.contains(event.target)) {
+            servicesDropdown.classList.remove('active');
+        }
+    });
+
+
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    // const servicesDropdown = document.getElementById('servicesDropdown');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
+
+    servicesDropdown.addEventListener('click', () => {
+        servicesDropdown.classList.toggle('active');
+    });
+
+
+
+</script>
+
+</body>
+</html> 
