@@ -1,3 +1,4 @@
+/* Font Faces */
 @font-face {
   font-family: 'Passions Conflict';
   src: url('assets/font/PassionsConflict-Regular.ttf') format('truetype');
@@ -53,7 +54,7 @@ body {
 
 /* Hero Section */
 .hero {
-  background-color: #F5F0E6;
+  background-color: #efe4d8;
   position: relative;
   overflow: hidden;
 }
@@ -71,7 +72,7 @@ body {
   position: relative;
   width: 500px;
   min-width: 320px;
-  height: 600px;
+  height: 780px;
   display: flex;
   align-items: flex-end;
   z-index: 1;
@@ -79,26 +80,26 @@ body {
 
 .hero-arch-bg {
   position: absolute;
-  left: 0;
+  left: -4rem;
   bottom: 0;
-  top: 50px;
-  width: 350px;
-  height: 500px;
+  top: 20px;
+  width: 570px;
+  height: 710px;
   background: #b89a7c;
   border-bottom-left-radius: 0px;
-  border-top-left-radius: 180px;
-  border-top-right-radius: 180px;
+  border-top-left-radius: 280px;
+  border-top-right-radius: 280px;
   border-bottom-right-radius: 0;
   z-index: 1;
 }
 
 .hero-arch-image-frame {
   position: absolute;
-  left: 90px;
+  left: 40px;
   bottom: 0;
-  top: 100px;
-  width: 350px;
-  height: 500px;
+  top: 80px;
+  width: 500px;
+  height: 700px;
   background: none;
   box-shadow: none;
   z-index: 2;
@@ -106,7 +107,7 @@ body {
   align-items: flex-end;
   justify-content: center;
   /* Add border-radius and overflow for curved top corners */
-  border-radius: 180px 180px 0 0;
+  border-radius: 245px 235px 0 0;
   overflow: hidden;
   /* border: 3px solid red; */
 }
@@ -133,13 +134,15 @@ body {
 }
 
 .hero-text {
-  text-align: center;
-  padding-top: 5rem;
+  /* text-align: center; */
+  padding-top: 7rem;
+  margin-top: 8rem;
 }
 
 .hero-title {
   font-family: 'Passions Conflict', 'cursive';
-  font-size: 5rem;
+  font-size: 7.5rem;
+  margin-left: 7rem;
   color: #040400;
   margin-bottom: 1rem;
   line-height: 1.2;
@@ -147,24 +150,28 @@ body {
 }
 
 .hero-description {
-  font-size: 1.4rem;
-  color: #2F4F2F;
+  font-size: 1.8rem;
+  color: #040400;
   margin-bottom: 1rem;
-  margin-right: 6rem;
-  margin-left: 6rem;
+  margin-right: 1rem;
+  margin-left: 10rem;
   line-height: 1;
   font-family: 'Playfair Custom', serif;
 }
 
 .hero-illustrations {
   display: flex;
-  justify-content: center;
+  /* margin-right: 1rem; */
+  justify-content: flex-end;
+  /* height: 100px; */
   gap: 2rem;
 }
 
 .illustration {
   display: flex;
-  align-items: center;
+  /* margin-right: 1rem; */
+  /* align-items: center; */
+  /* font-size: large; */
   justify-content: center;
 }
 
@@ -254,7 +261,7 @@ body {
   margin-top: -5px;
   /* Pulls caption slightly up if needed */
   font-weight: 500;
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   line-height: 1.3;
   font-family: 'Playfair Display', serif;
   width: 100%;
@@ -522,89 +529,6 @@ html {
 }
 
 
-
-
-
-@media (max-width: 1024px) {
-  .hero-title {
-    font-size: 3rem;
-  }
-
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .treatment-content,
-  .style-content {
-    gap: 2rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .mobile-menu-toggle {
-    display: flex;
-  }
-
-  .nav-list {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: #2F4F2F;
-    flex-direction: column;
-    padding: 1rem;
-    gap: 1rem;
-  }
-
-  .nav-list.active {
-    display: flex;
-  }
-
-  .hero-content {
-    grid-template-columns: 1fr;
-    gap: 5rem;
-    text-align: center;
-  }
-
-  .hero-text {
-    text-align: center;
-
-    padding-left: 0;
-  }
-
-  .hero-title {
-    font-size: 2.5rem;
-  }
-
-  .rituals-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .treatment-content,
-  .style-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .treatment-text {
-    padding: 2rem;
-  }
-
-  .footer-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    text-align: center;
-  }
-
-  .hero-illustrations {
-    justify-content: center;
-  }
-}
-
-
-
 /* Animation On Hover Chnage */
 
 /* 1. Define keyframes */
@@ -651,13 +575,9 @@ html {
 
 
 
-
-
 /* ---------------------------------------- */
 /* ✅ Responsive Layout Adjustments */
 /* ---------------------------------------- */
-
-/* --- RESPONSIVE SYNC: Copy all responsive rules from styles.css to ensure identical breakpoints and layout --- */
 
 @media (max-width: 1200px) {
   .hero-content {
@@ -665,12 +585,14 @@ html {
     text-align: center;
     padding: 3rem 1rem;
   }
+
   .hero-image-wrapper {
     margin: 0 auto;
     height: 450px;
     width: 100%;
     max-width: 400px;
   }
+
   .hero-arch-bg,
   .hero-arch-image-frame {
     width: 100%;
@@ -679,33 +601,25 @@ html {
     left: 50%;
     transform: translateX(-50%);
   }
+
   .hero-title {
     font-size: 6rem;
     margin: 2rem auto;
   }
+
   .hero-description {
     font-size: 1.5rem;
     margin: 0 auto;
   }
+
+
   .rituals-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .balinese-rows-container {
     grid-template-columns: 1fr;
     padding: 0 40px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .hero-title {
-    font-size: 3rem;
-  }
-  .section-title {
-    font-size: 2rem;
-  }
-  .treatment-content,
-  .style-content {
-    gap: 2rem;
   }
 }
 
@@ -713,24 +627,30 @@ html {
   .container {
     padding: 0 10px;
   }
+
   .header .container {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
   }
+
   .hero-title {
     font-size: 5rem;
     margin-left: 0;
   }
+
   .hero-description {
     font-size: 1.3rem;
     margin: 0 auto;
     text-align: center;
   }
+
+  /* Change rituals-grid to horizontal row with scrolling */
   .rituals-grid {
     display: flex;
     flex-direction: row;
     overflow-x: auto;
+    /* gap: 0rem; */
     -webkit-overflow-scrolling: touch;
     padding-bottom: 10px;
   }
@@ -764,71 +684,47 @@ html {
     font-size: 1rem;
     padding: 0.5rem;
   }
+
   .treatment-content,
   .style-content {
     grid-template-columns: 1fr;
     gap: 2rem;
     text-align: center;
   }
+
   .treatment-text,
   .style-text {
     padding: 2rem 1rem;
   }
+
   .custom-card {
     flex-direction: column;
     height: auto;
     max-width: 100%;
   }
+
   .custom-card-img,
   .custom-card-text {
     max-width: 100%;
     height: auto;
   }
+
   .custom-card-title {
     font-size: 1.4rem;
   }
+
   .custom-card-desc {
     font-size: 0.95rem;
   }
+
   .balinese-row {
     flex-direction: column;
     gap: 2rem;
   }
+
   .section-title,
   .section-subtitle {
     font-size: 4rem;
-  }
-  .footer {
-    padding: 30px 15px 10px;
-  }
-  .footer-left,
-  .footer-right {
-    text-align: center;
-    padding: 0;
-  }
-  .footer-left {
-    /* margin-bottom: 25px; */
-  }
-  .footer-right ul {
-    text-align: center;
-  }
-  .main-footer-logo {
-    width: 200px !important;
-  }
-  .footer h2 {
-    font-size: 65px;
-  }
-  .footer-right li {
-    font-size: 16px;
-  }
-  .footer-content {
-    gap: 20px;
-    margin-bottom: 20px;
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-  .hero-illustrations {
-    justify-content: center;
   }
 }
 
@@ -836,22 +732,39 @@ html {
   .hero-title {
     font-size: 3.5rem;
   }
+
   .hero-description {
     font-size: 1.1rem;
+  }
+  .hero-illustrations{
+     /* width: 100px; */
+    /* height: 100px;
+    
+    */
+    /* margin-left: 10px; */
+  }
+  .illustration {
+    /* width: 100px; */
+    /* height: 100px; */
   }
   .section-title,
   .section-subtitle {
     font-size: 3rem;
   }
+
   .ritual-caption {
     font-size: 1.5rem;
   }
+
   .custom-card-title {
     font-size: 1.2rem;
   }
+
   .custom-card-desc {
     font-size: 0.9rem;
   }
+
+  /* Reduce gap between ritual cards for very small screens */
   .rituals-grid {
     gap: 0.0rem;
   }
@@ -875,80 +788,13 @@ html {
     overflow: hidden;
     background-color: white;
   }
+  .ritual-caption {
+    font-size: 1.2rem;
+  }
   .ritual-card:last-child {
     margin-right: 0;
   }
 }
-
-/* Navbar and nav-links responsive rules */
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #0d1c17;
-    margin-top: 20px;
-  }
-  .nav-links.show {
-    display: flex;
-  }
-  .nav-links li {
-    padding: 15px;
-    text-align: center;
-  }
-  .dropdown-menu {
-    position: static;
-    border-radius: 0;
-    background-color: #d9bb90;
-  }
-}
-
-.nav-links .dropdown::after {
-  display: none !important;
-}
-
-@media (max-width: 768px) {
-  .nav-links li:hover {
-    color: #f3eee9 !important;
-  }
-  .nav-links li:hover::after {
-    width: 0% !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer {
-    padding: 30px 15px 10px;
-  }
-  .footer-left,
-  .footer-right {
-    text-align: center;
-    padding: 0;
-  }
-  .footer-left {
-    margin-bottom: 0px;
-  }
-  .footer-content {
-    gap: 20px;
-    margin-bottom: 20px;
-  }
-  .footer-right ul {
-    text-align: center;
-  }
-  .main-footer-logo {
-    width: 110px !important;
-  }
-  .footer h2 {
-    font-size: 65px;
-  }
-  .footer-right li {
-    font-size: 16px;
-  }
-}
-
 
 
 
@@ -1282,35 +1128,47 @@ html {
 /* Responsive */
 @media (max-width: 768px) {
   .footer {
-    padding: 30px 15px 10px;
+      padding: 30px 15px 10px;
   }
 
   .footer-left,
   .footer-right {
-    text-align: center;
-    padding: 0;
+      text-align: center;
+      padding: 0;
   }
 
   .footer-left {
-    /* margin-bottom: 25px; */
+      /* margin-bottom: 25px; */
   }
 
   .footer-right ul {
-    text-align: center;
+      text-align: center;
   }
 
   .main-footer-logo {
-    width: 200px !important;
+      width: 200px !important;
   }
 
   .footer h2 {
-    font-size: 65px;
+      font-size: 65px;
   }
 
   .footer-right li {
-    font-size: 16px;
+      font-size: 16px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 768px) {
@@ -1325,15 +1183,12 @@ html {
   }
 
   .footer-left {
-    margin-bottom: 0px;
-    /* 👈 changed from 25px to 0px */
+    margin-bottom: 0px; /* 👈 changed from 25px to 0px */
   }
 
   .footer-content {
-    gap: 20px;
-    /* 👈 tighter spacing between left & right */
-    margin-bottom: 20px;
-    /* 👈 less space below the content */
+    gap: 20px; /* 👈 tighter spacing between left & right */
+    margin-bottom: 20px; /* 👈 less space below the content */
   }
 
   .footer-right ul {
@@ -1350,80 +1205,5 @@ html {
 
   .footer-right li {
     font-size: 16px;
-  }
-}
-
-/* --- Uniform Ritual Card Height Fix --- */
-.ritual-card {
-  height: 420px;
-  min-height: 420px;
-  max-height: 420px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-.arch-image {
-  width: 100%;
-  max-width: 320px;
-  height: 260px;
-  min-height: 260px;
-  max-height: 260px;
-  margin: 0 auto;
-  border-radius: 120px 120px 0 0;
-  overflow: hidden;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.ritual-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-.ritual-caption {
-  flex: 1 1 auto;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  width: 100%;
-  font-size: 2.1rem;
-  padding: 1rem 0 0.5rem 0;
-  margin-top: 0;
-}
-
-/* Responsive: adjust card height for mobile */
-@media (max-width: 768px) {
-  .ritual-card {
-    height: 300px;
-    min-height: 300px;
-    max-height: 300px;
-  }
-  .arch-image {
-    height: 130px;
-    min-height: 130px;
-    max-height: 130px;
-    max-width: 100px;
-    border-radius: 50px 50px 0 0;
-  }
-  .ritual-caption {
-    font-size: 1rem;
-    padding: 0.5rem 0 0 0;
-  }
-}
-@media (max-width: 480px) {
-  .ritual-card {
-    height: 220px;
-    min-height: 220px;
-    max-height: 220px;
-  }
-  .arch-image {
-    height: 90px;
-    min-height: 90px;
-    max-height: 90px;
-    max-width: 70px;
-    border-radius: 30px 30px 0 0;
   }
 }
